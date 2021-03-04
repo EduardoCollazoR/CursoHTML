@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de seleccion</title>
+</head>
+<body>
+    <form>
+        <!-- radiobutton-->
+        <h2>Genero</h2>
+        <label >Masculino
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+        <label >Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+
+<!-- checkbox-->
+        <h2>Lenguajes que conoces</h2>
+        <label >
+            <input type="checkbox" name="languages" value="html" checked>
+            HTML
+        </label>
+        <label >
+            <input type="checkbox" name="languages" value="css" checked>
+            CSS
+        </label>
+        <label >
+            <input type="checkbox" name="languages" value="js">
+            JS
+        </label>
+
+<!-- select basico-->
+    <select name="lenguajes" multiple >
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="jv">JV</option>
+    </select>
+
+    <select name="numeros" >
+        <optgroup label="menores">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </optgroup>
+    <optgroup label="mayores">
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">8</option>
+        <option value="8">8</option>
+    </optgroup>
+    </select>
+<!-- datalist filtro-->
+    <input type="list" list="numeros">
+    <datalist id="numeros">
+        <option value="num">1</option>
+        <option value="num">2</option>
+        <option value="num">3</option>
+        <option value="num">4</option>
+        <option value="num">5</option>
+        <option value="num">6</option>
+        <option value="num">8</option>
+        <option value="num">8</option>
+
+    </datalist>
+        
+    </form>
+    
+</body>
+</html>
